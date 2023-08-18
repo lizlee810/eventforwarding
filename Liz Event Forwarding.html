@@ -1,0 +1,53 @@
+Liz Event Forwarding
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liz's Important Site</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    padding: 50px;
+  }
+  #intro {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  #conversionButton {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <p id="intro">Welcome to Liz's Very Important Site that Needs Lots of Adobe Solutions!</p>
+  <button id="conversionButton">Clicking here is a conversion</button>
+</div>
+<script>
+  const conversionButton = document.getElementById("conversionButton");
+
+  let clicked = false;
+
+  conversionButton.addEventListener("click", () => {
+    if (clicked) {
+      conversionButton.textContent = "Button has been clicked!";
+    } else {
+      conversionButton.textContent = "Clicking here is a conversion";
+    }
+    clicked = !clicked;
+  });
+</script>
+</body>
+</html>
