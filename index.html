@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>  
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Liz's Important Site</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liz's Important Site</title>
+    <script src="https://assets.adobedtm.com/59610d662d36/568403ef8820/launch-580680009327-development.min.js" async></script>>
+</head> 
+
 <style>
   body {
     font-family: Arial, sans-serif;
@@ -29,23 +32,9 @@
 </style>
 </head>
 <body>
-<div class="container">
-  <p id="intro">Welcome to Liz's Very Important Site that Needs Lots of Adobe Solutions!</p>
-  <button id="conversionButton">Clicking here is a conversion</button>
-</div>
-<script>
-  const conversionButton = document.getElementById("conversionButton");
-
-  let clicked = false;
-
-  conversionButton.addEventListener("click", () => {
-    if (clicked) {
-      conversionButton.textContent = "Button has been clicked!";
-    } else {
-      conversionButton.textContent = "Clicking here is a conversion";
-    }
-    clicked = !clicked;
-  });
-</script>
+    <h1> Welcome to Liz's Very Important Site that Needs Lots of Adobe Solutions!</h1>
+    <input type="text" id="theText" style="width:25%;"/><br/><br/>
+    <input type="submit" id="theButton" style="font-weight:bold;" value="Convert me!" />
+    <input type="checkbox" id="addDadJoke" >Add Dad Joke </input>
 </body>
 </html>
